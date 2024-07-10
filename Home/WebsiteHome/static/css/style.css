@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap');
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Phudu", sans-serif;
+    text-transform:none
+}
+.home {
+    background: url('../images/skyscraper.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+body{
+    background-color: rgb(240, 236, 229);
+}
+a.mode {
+    background: #fff;
+    padding: .1rem;
+    border-radius: 50%;
+}
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15rem;
+}
+.bar-top {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 6rem;
+    border-radius: 20px;
+    background-color: #fff;
+}
+.bar-top a {
+    color: #000;
+    text-decoration: none;
+    margin-left: 1.9rem;
+    font-weight: 500;
+}
+.Tools-bar-top a {
+    text-decoration: none;
+    color: black;
+    margin-right: 1rem;
+}
+.Tools-bar-top {
+    color: #000;
+    display: flex;
+    align-items: center;
+}
+.title h1 {
+    font-size: 10rem;
+}
