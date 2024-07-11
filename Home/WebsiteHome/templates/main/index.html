@@ -1,10 +1,16 @@
 {% extends "base_pages/base.html" %}
-{% block title %}naif{% endblock %}
-{%block NameClassBackground%}home{%endblock%}
+{% block title %}Home{% endblock %}
+{% block NameClassBackground %} 
+{% if  HttpRequest.COOKIES.mode == 'dark'%}
+banner-home-dark
+{% else %}
+banner-home
+{% endif %}
+{%endblock%}
 {% block head%}
 
 
-<div class="Benner">
+<div class="Benner {% if request.COOKIES.mode == 'dark' %}font-dark{% endif %}">
     <div class="title">
         <h1>FIND YOUR <br>DREAMS</h1>
     </div>
@@ -12,7 +18,7 @@
         <P>Our catalog will surprise you. Rather, discover an unprecendented offers of luxury properties. Our <br>catalog will surprise you. Rather, discover an unprecendented offers of luxury properties.</P>
     </div>
     <div>
-        <button class="btn">Expolore Properties</button>
+        <a href="{% url 'WebsiteHome:properties' %}" class="btn">Expolore Properties</a>
     </div>
 </div>
 
@@ -22,7 +28,7 @@
 </div>
 </div>
 <div class="header-bottom-bt">
-<div class="header-bottom">
+<div class="header-bottom {% if request.COOKIES.mode == 'dark' %}background-dark font-dark{% endif %}">
 <div>
     <span class="material-symbols-outlined">
         house
@@ -45,7 +51,7 @@
     <span class="material-symbols-outlined">
         villa
         </span>
-        <p>villa</p>
+        <p>VILLA</p>
 </div>
 </div>
 

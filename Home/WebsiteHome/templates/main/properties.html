@@ -1,0 +1,23 @@
+{% extends "base_pages/base.html" %}
+{% load static %}
+{% block title %}properties{% endblock %}
+
+{% block head%}
+
+
+<div class="properties">
+    <h1 class="{% if request.COOKIES.mode == 'dark' %}font-dark{% endif %}">OUR PROPERTIES</h1>
+    <div class="Bu">
+        <div class="box-Buildings">
+            {% for properties in properties %}
+            <div class="Buildings">
+                <img src="{% static 'images/'%}{{properties.image}}" alt="">
+                <h1>{{properties.title}}</h1>
+                <button>more</button>
+            </div>
+            {% endfor%}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

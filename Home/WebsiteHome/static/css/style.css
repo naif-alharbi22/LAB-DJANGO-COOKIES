@@ -10,14 +10,14 @@
 
     
 }
-.home {
+.banner-home {
     background: url('../images/skyscraper.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: 93vh;
 }
-body{
-    background-color: rgb(240, 236, 229);
+body {
+    background-color: rgb(235 234 233);
 }
 a.mode {
     background: #fff;
@@ -28,14 +28,21 @@ a.mode {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    height: 12rem;
+    height: 15rem;
 }
-.header h1 {
+.Home {
     font-family: "Phudu", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
+    color: #000;
     font-style: normal;
     font-size: 2.5rem;
+    text-decoration: none;
+    transition: color 1s, transform 1s;
+}
+.Home:hover{
+    transform:scale(1.2);
+    color:red;
 }
 .bar-top {
     display: flex;
@@ -49,6 +56,11 @@ a.mode {
     text-decoration: none;
     margin-left: 1.9rem;
     font-weight: 500;
+    transition:color 1s,transform 1s;
+}
+.bar-top a:hover{
+    transform: scale(1.2);
+    color: red;
 }
 .Tools-bar-top a {
     text-decoration: none;
@@ -61,12 +73,28 @@ a.mode {
     align-items: center;
 }
 .title h1 {
-    font-size: 8rem;
+    font-size: 10rem;
     font-family: "Phudu", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    
+    right: 0;
+    position:relative;
+    animation: title-intro 2s 
+}
+@keyframes title-intro{
+    0%{
+        opacity: 0;
+        transform: scale(0.0);
+    }
+    30%{
+        right: 10rem;
+    }
+    100%{
+        opacity: 1;
+        right: 0;
+        
+    }
 }
 .box {
     margin: 0px 11%;
@@ -76,6 +104,8 @@ a.mode {
     color: #fff;
     background-color: #000;
     border-radius: 40px;
+    border:none;
+    text-decoration: none;
 }
 .Benner {
     display: flex;
@@ -83,6 +113,7 @@ a.mode {
     gap: 1.5rem;
 }
 .header-bottom {
+    font-family: "Phudu", sans-serif;
     display: flex;
     justify-content: space-around;
     background: white;
@@ -91,6 +122,10 @@ a.mode {
     width: 40%;
     bottom: .4rem;
     border-radius: 3.5rem;
+}
+.header-bottom div p{
+    font-family: "Phudu", sans-serif;
+    margin-top: .3rem;
 }
 .header-bottom-bt {
     display: flex;
@@ -112,6 +147,7 @@ a.mode {
 }
 .header-bottom>div:nth-child(1) p {
     color: #27b803;
+    
 }
 .header-bottom>div:nth-child(2) span {
     background: #ead5bc;
@@ -136,4 +172,140 @@ a.mode {
 .header-bottom>div:nth-child(4) p {
     color: #0e0eae;
 }
+/*page properties*/
+.Buildings {
+    width: 31%;
+    position: relative;
+    height: 25rem;
+    background: #e2e1e1;
+    gap: 1.5rem;
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    flex-direction: column;
+}
+.Buildings img {
+    max-width: 100%;
+    height: 70%;
+}
+.Buildings button {
+    position: absolute;
+    right: 10px;
+    padding: .5rem 2rem;
+    border-radius: 20rem;
+    border: none;
+    background: #000;
+    color: #fff;
+    bottom: .7rem;
+}
+.Buildings  h1 {
+    font-family: "Phudu", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    position: relative;
+    left: 1rem;
+}
+.properties {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.box-Buildings {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1.6rem;
+}
+.properties h1 {
+    font-weight: 500;
+    font-family:"Phudu", sans-serif;;
+}
+/*page contact*/
 
+.banner-contact {
+    background: url('../images/email.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 93vh;
+}
+.address{
+    font-family: "Phudu", sans-serif;
+}
+.Bu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info-contact {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+.info-contact h1 {
+    font-size: 1.3rem;
+}
+iframe.google-map {
+    width: 52.9rem;
+    border-radius: 20px;
+}
+
+/*mode dark*/
+.banner-home-dark{
+    background: url('../images/skyscraper-dark.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 93vh;
+}
+.Benner-dark {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+}
+.font-dark{
+    color:#fff !important
+}
+.font-dark a{
+    color:#fff !important
+}
+.font-dark p{
+    color:#fff !important
+}
+.background-dark{
+    background-color: #282828 !important;
+}
+.mode-dark svg{
+    fill: #fff !important;
+}
+.border-dark{
+    background: #282828;
+    padding: .1rem;
+    border-radius: 50%;
+}
+.body-dark{
+    background-color: #323232;
+}
+.background-dark>div:nth-child(1) span {
+    background: #2e5428;
+    color: #29bf04;
+}
+
+.background-dark>div:nth-child(2) span {
+    background: #543f25;
+    color: #bc790a;
+}
+
+
+.background-dark>div:nth-child(3) span {
+    background: #592756;
+    color: #c50dbd;
+}
+
+
+.background-dark>div:nth-child(4) span {
+    background: #222558;
+    color: #161acd;
+}
