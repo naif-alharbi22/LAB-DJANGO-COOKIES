@@ -7,4 +7,5 @@ NameApps='WebsiteHome'
 
 urlpatterns=[
     path('' , views.HomePages , name='HomePages'),
+    path('properties/', views.properties, name='properties')
 ]

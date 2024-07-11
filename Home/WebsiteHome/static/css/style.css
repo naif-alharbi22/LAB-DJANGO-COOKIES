@@ -1,12 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 
 *{
     padding: 0px;
     margin: 0px;
-    font-family: "Phudu", sans-serif;
-    text-transform:none
+    font-family: "Ubuntu", sans-serif;
+
+    
 }
 .home {
     background: url('../images/skyscraper.jpeg');
@@ -24,15 +26,22 @@ a.mode {
 }
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
-    height: 15rem;
+    height: 12rem;
+}
+.header h1 {
+    font-family: "Phudu", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.5rem;
 }
 .bar-top {
     display: flex;
     justify-content: space-around;
     padding: 1.5rem 6rem;
-    border-radius: 20px;
+    border-radius: 2.5rem;
     background-color: #fff;
 }
 .bar-top a {
@@ -52,5 +61,79 @@ a.mode {
     align-items: center;
 }
 .title h1 {
-    font-size: 10rem;
+    font-size: 8rem;
+    font-family: "Phudu", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    
 }
+.box {
+    margin: 0px 11%;
+}
+.btn{
+    padding:.5rem 2rem ;
+    color: #fff;
+    background-color: #000;
+    border-radius: 40px;
+}
+.Benner {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.header-bottom {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 1.5rem 3rem;
+    position: absolute;
+    width: 40%;
+    bottom: .4rem;
+    border-radius: 3.5rem;
+}
+.header-bottom-bt {
+    display: flex;
+    justify-content: center;
+}
+.material-symbols-outlined{
+    background-color: red;
+    border-radius: 50%;
+    padding: 9px;
+}
+.header-bottom div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-bottom>div:nth-child(1) span {
+    background: rgb(198 234 191);
+    color: #27b803;
+}
+.header-bottom>div:nth-child(1) p {
+    color: #27b803;
+}
+.header-bottom>div:nth-child(2) span {
+    background: #ead5bc;
+    color: #b8760b;
+}
+.header-bottom>div:nth-child(2) p {
+    color: #b8760b;
+}
+
+.header-bottom>div:nth-child(3) span {
+    background: #cda2ca;
+    color: #b322ad;
+}
+.header-bottom>div:nth-child(3) p {
+    color: #b322ad;
+}
+
+.header-bottom>div:nth-child(4) span {
+    background: #989cc6;
+    color: #0e0eae;
+}
+.header-bottom>div:nth-child(4) p {
+    color: #0e0eae;
+}
+

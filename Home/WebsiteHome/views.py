@@ -5,3 +5,6 @@ from django.http import HttpRequest
 def HomePages(HttpRequest:HttpRequest):
 
     return render(HttpRequest, 'main/index.html')
+
+def properties(HttpRequest:HttpRequest):
+    return render(HttpRequest , 'main/nsf.html')
